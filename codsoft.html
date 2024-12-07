@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeTech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="block-header">
+    <div class="block-header-layout">
+      <a class="block-header-logo" href="/">
+        <img class="block-header-logo__image" src="logo.png" alt="CodeTech Logo">
+      </a>
+      <nav class="block-header__nav">
+        <ul class="block-header__nav-links">
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/services">Services</a></li>
+          <li><a class="nav-link" href="/about">About</a></li>
+          <li><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger-icon">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to <span>CodeTech</span></h1>
+      <p>Discover innovative solutions and cutting-edge technologies.</p>
+      <a href="#services" class="hero-button">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="blocks">
+    <h2>Our Services</h2>
+    <div class="block">
+      <div class="block-layout">
+        <h3>Your Document is Verified!</h3>
+        <img class="service-image" src="https://assets.zyrosite.com/Aq20eV79zLfpXV6b/source-dJoG1g8L9nhpnwB4.gif" alt="Verification GIF">
+        <a href="https://CodeTech.co.in/" rel="nofollow" class="grid-button">Visit Website</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <p><strong>Contact Us:</strong> <a href="mailto:contact@CodeTech.in">contact@CodeTech.in</a></p>
+      </div>
+      <div>
+        <p>© 2023 <strong>CodeTech</strong>. Designed by Team CodeTech.</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/CodeTech_official/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/CodeTechofficial/" target="_blank">Facebook</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger-icon');
+    const navLinks = document.querySelector('.block-header__nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+    });
+  });
+</script>
+</html>
+
+<style>
+  /* General Reset */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+}
+
+/* Header */
+.block-header {
+  display: flex; /* Make header a flex container */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Space items horizontally */
+  padding: 20px 40px; /* Adjust padding */
+  background: linear-gradient(45deg, #00203f, #0078a2);
+  color: white;
+  z-index: 10;
+  box-shadow: 1px 1px 5px white;
+}
+.block-header-layout{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.block-header-logo {
+  display: flex; /* Ensure logo container aligns with flex */
+  align-items: center; /* Center the image vertically */
+}
+
+.block-header-logo__image {
+  height: 100px; /* Adjust logo size */
+  margin-right: 20px; /* Optional spacing after logo */
+  filter: drop-shadow(1px 1px 4px #fff);
+}
+
+.block-header__nav {
+  display: flex; /* Ensure nav container aligns with flex */
+  justify-content: right; /* Center links vertically */
+}
+
+.block-header__nav-links {
+  list-style: none;
+  display: flex; /* Align nav links horizontally */
+  align-items: center; /* Center nav items vertically */
+  gap: 30px; /* Add spacing between links */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 15px; /* Add padding for better click area */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #005f7f; /* Highlight link on hover */
+  color: #f4c8d0;
+}
+
+
+.nav-link:hover {
+  background: #005f7f; /* Highlight link on hover */
+  color: #f4c8d0;
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  margin: 0px;
+  position: relative;
+  top: -40px;
+  text-align: center;
+  color: white;
+  background: url('https://images.unsplash.com/photo-1636955816868-fcb881e57954?auto=format&fit=crop&w=1920') no-repeat center/cover;
+  height: 100vh;
+  z-index: -10;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+}
+
+.hero-content h1 span {
+  color: #ffd700;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.hero-button {
+  margin: 30px 0;
+  padding: 15px 30px;
+  background: #ffd700;
+  border: none;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: white;
+}
+
+/* Services Section */
+.blocks h2 {
+  position: relative;
+  margin: 0;
+  background: #00203f;
+  top: -40px;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  padding: 20px 0;
+}
+
+.block {
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.block-layout{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+.block-layout img {
+  max-width: 100px;
+  margin: auto;
+}
+
+.grid-button {
+  margin: 10px 10px;
+  padding: 10px 20px;
+  background: #0078a2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.grid-button:hover {
+  background: #005f7f;
+}
+
+/* Footer */
+footer {
+  background: #00203f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .block-header-logo__image {
+    height: 70px;
+  }
+  .block-header__nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-active {
+    display: flex !important;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+}
+
+</style>
+<script>
+    // Get the hamburger button and navigation list
+const hamburger = document.querySelector('.hamburger-icon');
+const navLinks = document.querySelector('.block-header__nav-links');
+
+// Toggle navigation visibility when hamburger menu is clicked
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('nav-active');
+});
+
+  </script>
+</html>
