@@ -10,15 +10,15 @@
   <!-- Header Section -->
   <header class="block-header">
     <div class="block-header-layout">
-      <a class="block-header-logo" href="/">
+      <a class="block-header-logo" href="index.html">
         <img class="block-header-logo__image" src="logo.png" alt="CodeTech Logo">
       </a>
       <nav class="block-header__nav">
         <ul class="block-header__nav-links">
-          <li><a class="nav-link" href="/">Home</a></li>
-          <li><a class="nav-link" href="/services">Services</a></li>
-          <li><a class="nav-link" href="/about">About</a></li>
-          <li><a class="nav-link" href="/contact">Contact</a></li>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html">Services</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="form.html">Certification</a></li>
         </ul>
       </nav>
       <button class="hamburger-icon">&#9776;</button>
@@ -92,7 +92,7 @@ body {
   padding: 20px 40px; /* Adjust padding */
   background: linear-gradient(45deg, #0078a2, #00203f);
   color: white;
-  z-index: 10;
+  z-index: 0;
   box-shadow: 1px 1px 5px white;
 }
 .block-header-layout{
@@ -120,6 +120,7 @@ body {
 }
 
 .block-header__nav-links {
+  z-index: 20;
   list-style: none;
   display: flex; /* Align nav links horizontally */
   align-items: center; /* Center nav items vertically */
