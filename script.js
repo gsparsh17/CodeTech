@@ -11,10 +11,15 @@ document.getElementById("certificateForm").addEventListener("submit", function (
         domain: "Web Development",
         period: "June 2024 - August 2024",
       },
-      CERT456: {
-        name: "Jane Smith",
-        domain: "Data Science",
-        period: "July 2024 - September 2024",
+      bb1567: {
+        name: "Sumit Srivastava",
+        domain: "Android Development",
+        period: "1st October 2024 - 31st October 2024",
+      },
+      re9123: {
+        name: "Piyush Agrahari",
+        domain: "Android Development",
+        period: "1st October 2024 - 31st October 2024",
       },
       CERT789: {
         name: "Emily Brown",
