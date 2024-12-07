@@ -301,24 +301,19 @@ footer {
   }
 
   .nav-active {
+    background: linear-gradient(45deg, #0078a2, #00203f);
+    padding: 20px 0px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 95px;
     display: flex;
+    transition: background 0.3s, color 3s;
   }
 
   .hero-content h1 {
     font-size: 36px;
   }
 }
-
 </style>
-<script>
-    // Get the hamburger button and navigation list
-const hamburger = document.querySelector('.hamburger-icon');
-const navLinks = document.querySelector('.block-header__nav-links');
-
-// Toggle navigation visibility when hamburger menu is clicked
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('nav-active');
-});
-
-  </script>
 </html>

@@ -5,7 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificate Verification</title>
   <link rel="icon" href= "logo1.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css"> <!-- Reuse the CSS for a consistent theme -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger-icon');
+      const navLinks = document.querySelector('.block-header__nav-links');
+  
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+      });
+    });
+  </script> <!-- Reuse the CSS for a consistent theme -->
 </head>
 <body>
   <!-- Header -->
@@ -65,6 +75,16 @@
     </div>
   </footer>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger-icon');
+      const navLinks = document.querySelector('.block-header__nav-links');
+  
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+      });
+    });
+  </script>
 <script src="script.js"></script>
 </html>
 <style>
@@ -348,9 +368,15 @@
     }
   
     .nav-active {
-      display: flex !important;
-    }
-  
+        background: linear-gradient(45deg, #0078a2, #00203f);
+        padding: 20px 0px;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 95px;
+        display: flex;
+        transition: background 0.3s, color 3s;
+      }
     .hero-content h1 {
       font-size: 36px;
     }
